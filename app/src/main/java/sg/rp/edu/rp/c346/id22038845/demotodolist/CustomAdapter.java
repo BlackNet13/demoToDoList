@@ -38,7 +38,7 @@ public class CustomAdapter extends ArrayAdapter {
         ToDoItem currentToDO = toDoList.get(position);
 
         tvTitle.setText(currentToDO.getTitle());
-        tvDate.setText(currentToDO.toString()); //???
+        tvDate.setText(currentToDO.toString()); //if done in currentToDo.getDate().toString() --> it is getting the value from the native Calendar class instead of the created ToDoItem class
 
         return rowView;
     }
