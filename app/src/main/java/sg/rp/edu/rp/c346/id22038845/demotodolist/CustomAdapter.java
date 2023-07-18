@@ -21,9 +21,9 @@ public class CustomAdapter extends ArrayAdapter {
 
     public CustomAdapter(Context context, int resource, ArrayList<ToDoItem> objects) {
         super(context, resource, objects);
-        this.parent_context = context;
-        this.layout_id = resource;
-        this.toDoList = objects;
+        parent_context = context;
+        layout_id = resource;
+        toDoList = objects;
     }
 
     @Override
